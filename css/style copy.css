@@ -1,12 +1,6 @@
-```css
 /* =========================================
-   DELA DATA EL AUTOMATION
+   MP Byggservice
    Gemensam CSS för hela webbplatsen
-   Färgtema:
-   Svart  #000000
-   Röd    #e30613
-   Vit    #ffffff
-   Grå    #f2f2f2
    ========================================= */
 
 
@@ -30,6 +24,9 @@
 }
 
 
+
+
+
 * {
     box-sizing: border-box;
 }
@@ -42,7 +39,7 @@ body {
     margin: 0;
     font-family: Arial, Helvetica, sans-serif;
     background: #ffffff;
-    color: #111111;
+    color: #202020;
     line-height: 1.7;
 }
 
@@ -73,18 +70,15 @@ h3 {
 h1 {
     font-size: clamp(42px, 7vw, 78px);
     letter-spacing: -2px;
-    font-weight: 800;
 }
 
 h2 {
     font-size: clamp(32px, 4vw, 48px);
     letter-spacing: -1px;
-    font-weight: 800;
 }
 
 h3 {
     font-size: 24px;
-    font-weight: 700;
 }
 
 p {
@@ -92,7 +86,7 @@ p {
 }
 
 .eyebrow {
-    color: #e30613;
+    color: #c77922;
     font-size: 13px;
     font-weight: 700;
     letter-spacing: 2px;
@@ -100,16 +94,16 @@ p {
 }
 
 .eyebrow.light {
-    color: #ffffff;
+    color: #e6ad69;
 }
 
 
 /* ---------- HEADER ---------- */
 
 .site-header {
-    background: #000000;
+    background: #151515;
     color: #ffffff;
-    border-bottom: 3px solid #e30613;
+    border-bottom: 1px solid #333;
 }
 
 .header-container {
@@ -129,7 +123,7 @@ p {
 }
 
 .logo span {
-    color: #e30613;
+    color: #d48a35;
 }
 
 
@@ -147,16 +141,12 @@ p {
     font-weight: 600;
     padding: 30px 0;
     border-bottom: 3px solid transparent;
-
-    transition:
-        color 0.2s ease,
-        border-color 0.2s ease;
 }
 
 .navigation a:hover,
 .navigation a.active {
     color: #ffffff;
-    border-bottom-color: #e30613;
+    border-bottom-color: #d48a35;
 }
 
 
@@ -173,13 +163,11 @@ p {
     background:
         linear-gradient(
             90deg,
-            rgba(0, 0, 0, 0.98),
-            rgba(0, 0, 0, 0.88),
-            rgba(0, 0, 0, 0.65)
+            rgba(15, 15, 15, 0.98),
+            rgba(15, 15, 15, 0.82),
+            rgba(15, 15, 15, 0.60)
         ),
-        #111111;
-
-    border-bottom: 5px solid #e30613;
+        #242424;
 }
 
 .hero-content {
@@ -190,10 +178,6 @@ p {
 .hero h1 {
     max-width: 850px;
     margin-bottom: 25px;
-}
-
-.hero h1 span {
-    color: #e30613;
 }
 
 .hero-text {
@@ -215,10 +199,10 @@ p {
 .button {
     display: inline-block;
 
-    background: #e30613;
-    color: #ffffff;
+    background: #d48a35;
+    color: #111111;
 
-    border: 2px solid #e30613;
+    border: 2px solid #d48a35;
 
     padding: 14px 25px;
 
@@ -231,26 +215,24 @@ p {
     transition:
         background 0.2s ease,
         color 0.2s ease,
-        border-color 0.2s ease,
         transform 0.2s ease;
 }
 
 .button:hover {
-    background: #b8000b;
-    border-color: #b8000b;
-    color: #ffffff;
+    background: #e49a44;
+    border-color: #e49a44;
     transform: translateY(-2px);
 }
 
 .button-secondary {
     background: transparent;
     color: #ffffff;
-    border-color: #ffffff;
+    border-color: #777777;
 }
 
 .button-secondary:hover {
     background: #ffffff;
-    color: #000000;
+    color: #111111;
     border-color: #ffffff;
 }
 
@@ -262,11 +244,11 @@ p {
 }
 
 .section-light {
-    background: #f4f4f4;
+    background: #f5f3ef;
 }
 
 .section-dark {
-    background: #111111;
+    background: #181818;
     color: #ffffff;
 }
 
@@ -278,10 +260,6 @@ p {
 .section-heading > p:last-child {
     color: #666666;
     font-size: 18px;
-}
-
-.section-dark .section-heading > p:last-child {
-    color: #cccccc;
 }
 
 
@@ -312,21 +290,10 @@ p {
     padding: 35px;
     border: 1px solid #dddddd;
     background: #ffffff;
-
-    transition:
-        transform 0.2s ease,
-        border-color 0.2s ease,
-        box-shadow 0.2s ease;
-}
-
-.card:hover {
-    transform: translateY(-4px);
-    border-color: #e30613;
-    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
 }
 
 .card-number {
-    color: #e30613;
+    color: #c77922;
     font-weight: bold;
     margin-bottom: 35px;
 }
@@ -343,10 +310,6 @@ p {
     padding: 25px 0;
 }
 
-.check-list > div:last-child {
-    border-bottom: 1px solid #444444;
-}
-
 .check-list strong {
     font-size: 20px;
 }
@@ -361,18 +324,13 @@ p {
 /* ---------- SIDHUVUD ---------- */
 
 .page-header {
-    background: #000000;
+    background: #1a1a1a;
     color: #ffffff;
     padding: 100px 0;
-    border-bottom: 5px solid #e30613;
 }
 
 .page-header h1 {
     max-width: 850px;
-}
-
-.page-header h1 span {
-    color: #e30613;
 }
 
 
@@ -391,18 +349,10 @@ p {
     padding: 40px 0;
 
     border-bottom: 1px solid #dddddd;
-
-    transition:
-        border-color 0.2s ease,
-        padding-left 0.2s ease;
-}
-
-.service-item:hover {
-    border-bottom-color: #e30613;
 }
 
 .service-item > span {
-    color: #e30613;
+    color: #c77922;
     font-weight: 700;
 }
 
@@ -420,11 +370,8 @@ p {
 /* ---------- CTA ---------- */
 
 .cta {
-    background: #000000;
-    color: #ffffff;
+    background: #e7e2da;
     padding: 90px 0;
-
-    border-top: 5px solid #e30613;
 }
 
 .cta .container {
@@ -432,16 +379,12 @@ p {
     text-align: center;
 }
 
-.cta h2 {
-    color: #ffffff;
-}
-
 .cta p:not(.eyebrow) {
     max-width: 650px;
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 30px;
-    color: #cccccc;
+    color: #555555;
 }
 
 
@@ -466,10 +409,6 @@ p {
     border-top: 1px solid #dddddd;
 }
 
-.contact-details > div:last-child {
-    border-bottom: 1px solid #dddddd;
-}
-
 .contact-details span {
     display: block;
     color: #777777;
@@ -485,9 +424,8 @@ p {
 /* ---------- FORMULÄR ---------- */
 
 .form-box {
-    background: #f4f4f4;
+    background: #f5f3ef;
     padding: 45px;
-    border-top: 4px solid #e30613;
 }
 
 .form-group {
@@ -516,10 +454,6 @@ p {
     font-size: 16px;
 
     outline: none;
-
-    transition:
-        border-color 0.2s ease,
-        box-shadow 0.2s ease;
 }
 
 .form-group textarea {
@@ -529,8 +463,7 @@ p {
 .form-group input:focus,
 .form-group textarea:focus,
 .form-group select:focus {
-    border-color: #e30613;
-    box-shadow: 0 0 0 2px rgba(227, 6, 19, 0.12);
+    border-color: #c77922;
 }
 
 .form-button {
@@ -541,11 +474,9 @@ p {
 /* ---------- FOOTER ---------- */
 
 .site-footer {
-    background: #000000;
+    background: #111111;
     color: #aaaaaa;
     padding: 50px 0;
-
-    border-top: 3px solid #e30613;
 }
 
 .footer-container {
@@ -562,38 +493,9 @@ p {
     margin-bottom: 5px;
 }
 
-.footer-logo span {
-    color: #e30613;
-}
-
 .site-footer p {
     margin: 0;
     font-size: 14px;
-}
-
-
-/* ---------- TEKNISK ACCENT ---------- */
-
-.hero::before {
-    content: "";
-    position: absolute;
-    left: 0;
-    top: 0;
-    width: 5px;
-    height: 100%;
-    background: #e30613;
-}
-
-.hero {
-    position: relative;
-}
-
-
-/* ---------- MARKERING ---------- */
-
-::selection {
-    background: #e30613;
-    color: #ffffff;
 }
 
 
@@ -689,6 +591,16 @@ p {
 
 @media (max-width: 500px) {
 
+
+/*    @media (max-width: 600px) {
+    .hero-title-image {
+        width: 100%;
+        max-width: 100%;
+        height: auto;
+    }
+}
+*/
+
     .navigation {
         gap: 12px;
     }
@@ -708,4 +620,3 @@ p {
     }
 
 }
-```
