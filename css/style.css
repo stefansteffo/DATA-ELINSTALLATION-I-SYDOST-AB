@@ -1,4 +1,4 @@
-```css
+
 /* =========================================
    DELA DATA EL AUTOMATION
    Gemensam CSS för hela webbplatsen
@@ -685,7 +685,7 @@ p {
 }
 
 
-/* ---------- EXTRA LITEN MOBIL ---------- */
+/* ---------- EXTRA LITEN MOBIL ---------- 
 
 @media (max-width: 500px) {
 
@@ -708,4 +708,5 @@ p {
     }
 
 }
-```
+
+*/
