@@ -129,7 +129,7 @@ p {
 }
 
 .logo span {
-    color: #d01ea9;
+    color:#e30613;
 }
 
 
@@ -193,7 +193,7 @@ p {
 }
 
 .hero h1 span {
-    color: #0926ba;
+    color: #e30613;
 }
 
 .hero-text {
@@ -364,7 +364,7 @@ p {
     background: #000000;
     color: #ffffff;
     padding: 100px 0;
-    border-bottom: 5px solid #e30613;
+    border-bottom: 5px solid #ce5fa5;
 }
 
 .page-header h1 {
