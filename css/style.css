@@ -179,7 +179,7 @@ p {
         ),
         #111111;
 
-    border-bottom: 5px solid #0ebc20;
+    border-bottom: 5px solid #e30613;
 }
 
 .hero-content {
@@ -193,7 +193,7 @@ p {
 }
 
 .hero h1 span {
-    color: #e30613;
+    color: #0926ba;
 }
 
 .hero-text {
