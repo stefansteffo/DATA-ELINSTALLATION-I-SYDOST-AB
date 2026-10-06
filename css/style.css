@@ -358,7 +358,7 @@ p {
 }
 
 
-/* ---------- SIDHUVUD ---------- */
+/* ---------- SIDHUVUD ---------- color: #e30613; */
 
 .page-header {
     background: #000000;
@@ -372,7 +372,7 @@ p {
 }
 
 .page-header h1 span {
-    color: #e30613;
+    color: #4f0ad0;
 }
 
 
