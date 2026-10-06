@@ -160,7 +160,7 @@ p {
 }
 
 
-/* ---------- HERO ---------- */
+/* ---------- HERO ---------- border-bottom: 5px solid #e30613; */
 
 .hero {
     min-height: 650px;
@@ -179,7 +179,7 @@ p {
         ),
         #111111;
 
-    border-bottom: 5px solid #e30613;
+    border-bottom: 5px solid #0ebc20;
 }
 
 .hero-content {
