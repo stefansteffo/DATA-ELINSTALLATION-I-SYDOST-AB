@@ -581,7 +581,9 @@ p {
     top: 0;
     width: 5px;
     height: 100%;
-    background: #0c0fb0;
+       background: #111111;
+
+  /*  background: #0c0fb0;       steffo kant på framsida         */
 }
 
 .hero {
@@ -592,7 +594,7 @@ p {
 /* ---------- MARKERING ---------- */
 
 ::selection {
-    background: #e30613;
+    background: #bf0fb0;
     color: #ffffff;
 }
 
