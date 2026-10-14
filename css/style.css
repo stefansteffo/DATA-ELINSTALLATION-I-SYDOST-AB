@@ -364,7 +364,8 @@ p {
     background: #000000;
     color: #ffffff;
     padding: 100px 0;
-    border-bottom: 5px solid #ce5fa5;
+   /* border-bottom: 5px solid #ce5fa5; steffo KANT NEDANFÖR påalla sidorutomindet sidan */
+     border-bottom: 5px solid  #e30613;
 }
 
 .page-header h1 {
@@ -546,7 +547,7 @@ p {
     padding: 50px 0;
 
     border-top: 3px solid #e30613;
-    margin-top: 4mm;
+    margin-top: 10mm;
 }
 
 .footer-container {
