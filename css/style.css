@@ -546,6 +546,7 @@ p {
     padding: 50px 0;
 
     border-top: 3px solid #e30613;
+    margin-top: 4mm;
 }
 
 .footer-container {
@@ -563,7 +564,7 @@ p {
 }
 
 .footer-logo span {
-    color: #e30613;
+    color: #1ad117;
 }
 
 .site-footer p {
@@ -583,7 +584,7 @@ p {
     height: 100%;
        background: #111111;
 
-  /*  background: #0c0fb0;       steffo kant på framsida         */
+  /*  background: #0c0fb0;       steffo kant på framsida ----TILL VÄNSTER--         */
 }
 
 .hero {
@@ -594,7 +595,8 @@ p {
 /* ---------- MARKERING ---------- */
 
 ::selection {
-    background: #bf0fb0;
+  /*   background: #bf0fb0;  steffo kant på framsida  ----NERTILL---*/
+     background: #e30613;
     color: #ffffff;
 }
 
