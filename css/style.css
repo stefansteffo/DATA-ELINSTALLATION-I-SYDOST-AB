@@ -803,3 +803,84 @@ p {
 .quality-navigation label:hover {
     background: black;
 }
+
+
+
+
+
+
+/* Bildspel */
+.quality-slideshow {
+    width: 100%;
+    height: 250px;
+    position: relative;
+    overflow: hidden;
+}
+
+.quality-slideshow input {
+    display: none;
+}
+
+/* Bildspårets storlek */
+.quality-slides {
+    display: flex;
+    width: 500%;
+    height: 100%;
+    transition: transform 0.4s ease;
+}
+
+/* En bild åt gången */
+.quality-slide {
+    flex: 0 0 20%;
+    width: 20%;
+    height: 100%;
+    overflow: hidden;
+}
+
+/* Alla bilder får samma storlek */
+.quality-slide img {
+    display: block;
+    width: 100%;
+    height: 250px;
+    object-fit: contain;
+}
+
+/* Välj bild */
+#bild1:checked ~ .quality-slides {
+    transform: translateX(0);
+}
+
+#bild2:checked ~ .quality-slides {
+    transform: translateX(-20%);
+}
+
+#bild3:checked ~ .quality-slides {
+    transform: translateX(-40%);
+}
+
+#bild4:checked ~ .quality-slides {
+    transform: translateX(-60%);
+}
+
+#bild5:checked ~ .quality-slides {
+    transform: translateX(-80%);
+}
+
+/* Bildknappar */
+.quality-navigation {
+    position: absolute;
+    bottom: 10px;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.quality-navigation label {
+    background: #e30613;
+    color: white;
+    padding: 6px 11px;
+    border-radius: 4px;
+    cursor: pointer;
+}
