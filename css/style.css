@@ -714,3 +714,92 @@ p {
 
 }
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* MANUELLT BILDSPEL */
+
+.quality-slideshow {
+    width: 100%;
+    height: 250px;
+    overflow: hidden;
+    position: relative;
+}
+
+.quality-slideshow input {
+    display: none;
+}
+
+.quality-slides {
+    display: flex;
+    width: 500%;
+    height: 100%;
+    transition: transform 0.4s ease;
+}
+
+.quality-slide {
+    width: 20%;
+    height: 100%;
+}
+
+.quality-slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+/* BYT BILD */
+
+#bild1:checked ~ .quality-slides {
+    transform: translateX(0);
+}
+
+#bild2:checked ~ .quality-slides {
+    transform: translateX(-20%);
+}
+
+#bild3:checked ~ .quality-slides {
+    transform: translateX(-40%);
+}
+
+#bild4:checked ~ .quality-slides {
+    transform: translateX(-60%);
+}
+
+#bild5:checked ~ .quality-slides {
+    transform: translateX(-80%);
+}
+
+/* BILDKNAPPAR */
+
+.quality-navigation {
+    position: absolute;
+    bottom: 10px;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.quality-navigation label {
+    background: #e30613;
+    color: white;
+    padding: 6px 11px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.quality-navigation label:hover {
+    background: black;
+}
