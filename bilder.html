@@ -124,26 +124,45 @@
 
                 <div class="cards">
 
+
+
+
+
 <article class="card">
 
     <div class="card-number">01</div>
 
     <h3>Kvalitet</h3>
 
-    <div class="image-slider">
+    <div class="quality-slideshow">
 
-        <div class="slider-images" id="sliderImages">
+        <div class="quality-slideshow-track" id="qualityTrack">
 
-            <img src="bilder/DELA.PNG" alt="DATA EL INSTALLATION">
-            <img src="bilder/El.PNG" alt="Elinstallation">
-            <img src="bilder/DELA.PNG" alt="Elservice">
-            <img src="bilder/El.PNG" alt="Belysning">
-            <img src="bilder/DELA.PNG" alt="Data och nätverk">
+            <div class="quality-slide">
+                <img src="bilder/DELA.PNG" alt="DATA EL INSTALLATION">
+            </div>
+
+            <div class="quality-slide">
+                <img src="bilder/El.PNG" alt="Elinstallation">
+            </div>
+
+            <div class="quality-slide">
+                <img src="bilder/DELA.PNG" alt="Elservice">
+            </div>
+
+            <div class="quality-slide">
+                <img src="bilder/El.PNG" alt="Belysning">
+            </div>
+
+            <div class="quality-slide">
+                <img src="bilder/DELA.PNG" alt="Data och nätverk">
+            </div>
 
         </div>
 
-        <button class="slider-btn prev" onclick="changeSlide(-1)">❮</button>
-        <button class="slider-btn next" onclick="changeSlide(1)">❯</button>
+        <button class="quality-arrow quality-prev" onclick="qualityChange(-1)">❮</button>
+
+        <button class="quality-arrow quality-next" onclick="qualityChange(1)">❯</button>
 
     </div>
 
