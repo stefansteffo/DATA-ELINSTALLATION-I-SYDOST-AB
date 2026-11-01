@@ -783,10 +783,8 @@ p {
 /* BILDKNAPPAR */
 
 .quality-navigation {
-    position: absolute;
-    bottom: 30px;
-    left: 0;
-    right: 0;
+    position: relative;
+    margin-top: 20px;
     display: flex;
     justify-content: center;
     gap: 30px;
