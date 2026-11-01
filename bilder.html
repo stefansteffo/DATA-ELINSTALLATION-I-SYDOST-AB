@@ -8,36 +8,195 @@
 
     <meta
         name="description"
-        content="Läs mer om  DATA ELINSTALLATION AUTOMATION i SYDOST AB (DELA) och hur vi arbetar med elinstallationer, elservice, belysning, data och nätverk."
+        content="Läs mer om DATA ELINSTALLATION AUTOMATION i SYDOST AB (DELA) och se bilder från genomförda projekt inom elinstallationer, belysning, data och nätverk."
     >
 
-    <title>Om oss | DATA ELINSTALLATION AUTOMATION i SYDOST AB (DELA)</title>
+    <title>Bilder | DATA ELINSTALLATION AUTOMATION i SYDOST AB (DELA)</title>
 
     <link rel="stylesheet" href="css/style.css">
+
+    <!-- Bildspel och klickknappar -->
+    <style>
+
+        /* =========================================
+           BILDSPEL
+           ========================================= */
+
+        .bildspel-container {
+            width: 100%;
+            text-align: center;
+            padding: 20px 0;
+        }
+
+        /* Bildvisning */
+        #bildvisare {
+            display: block;
+            width: 100%;
+            max-width: 800px;
+            height: 450px;
+            object-fit: contain;
+            margin: 0 auto;
+        }
+
+
+        /* =========================================
+           BILDKNAPPAR
+           ========================================= */
+
+        .quality-navigation {
+            position: relative;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: nowrap;
+
+            justify-content: center;
+            align-items: center;
+
+            gap: 10px;
+
+            margin-top: 20px;
+            margin-bottom: 25px;
+
+            width: 100%;
+        }
+
+        /* Röda fyrkantiga knappar med vita siffror */
+        .quality-navigation .bildknapp {
+            background-color: #e30613;
+            color: #ffffff;
+
+            border: none;
+            border-radius: 0;
+
+            width: 40px;
+            height: 40px;
+            min-width: 40px;
+
+            padding: 0;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            font-size: 16px;
+            font-weight: bold;
+
+            cursor: pointer;
+            flex-shrink: 0;
+        }
+
+        /* Mörkare röd vid muspekaren */
+        .quality-navigation .bildknapp:hover {
+            background-color: #b8050f;
+        }
+
+
+        /* =========================================
+           TELEFON – STÅENDE LÄGE
+           ========================================= */
+
+        @media screen and (max-width: 600px) {
+
+            #bildvisare {
+                width: 100%;
+                height: 55vh;
+                max-height: 450px;
+                object-fit: contain;
+            }
+
+            .quality-navigation {
+                position: relative;
+                flex-direction: row;
+                flex-wrap: nowrap;
+
+                justify-content: center;
+                gap: 6px;
+
+                margin-top: 15px;
+                margin-bottom: 20px;
+            }
+
+            .quality-navigation .bildknapp {
+                width: 35px;
+                height: 35px;
+                min-width: 35px;
+
+                font-size: 14px;
+            }
+        }
+
+
+        /* =========================================
+           TELEFON – LIGGANDE LÄGE
+           ========================================= */
+
+        @media screen and (max-width: 900px) and (orientation: landscape) {
+
+            #bildvisare {
+                width: 100%;
+                height: 55vh;
+                max-height: 350px;
+                object-fit: contain;
+            }
+
+            .quality-navigation {
+                position: relative;
+                bottom: auto;
+
+                display: flex;
+                flex-direction: row;
+                flex-wrap: nowrap;
+
+                justify-content: center;
+                align-items: center;
+
+                gap: 8px;
+
+                margin-top: 12px;
+                margin-bottom: 20px;
+            }
+
+            .quality-navigation .bildknapp {
+                width: 32px;
+                height: 32px;
+                min-width: 32px;
+
+                font-size: 14px;
+            }
+        }
+
+    </style>
+
 </head>
 
 
-
-
-
-
-
 <body>
+
+    <!-- =========================================
+         HEADER
+         ========================================= -->
 
     <header class="site-header">
 
         <div class="container header-container">
 
             <a href="index.html" class="logo">
-                DATA ELINSTALLATION<span> AUTOMATION i SYDOST AB (DELA) </span>
+                DATA ELINSTALLATION
+                <span> AUTOMATION i SYDOST AB (DELA) </span>
             </a>
 
             <nav class="navigation" aria-label="Huvudmeny">
+
                 <a href="index.html">Start</a>
+
                 <a href="om-oss.html">Om oss</a>
+
                 <a href="tjanster.html">Tjänster</a>
-                <a href="bilder.html" class="active"> Bilder</a>
-               <!-- <a href="kontakt.html">Kontakt</a> -->
+
+                <a href="bilder.html" class="active">Bilder</a>
+
+                <!-- <a href="kontakt.html">Kontakt</a> -->
+
             </nav>
 
         </div>
@@ -45,9 +204,14 @@
     </header>
 
 
+    <!-- =========================================
+         HUVUDINNEHÅLL
+         ========================================= -->
+
     <main>
 
         <!-- SIDHUVUD -->
+
         <section class="page-header">
 
             <div class="container">
@@ -57,7 +221,7 @@
                 </p>
 
                 <h1>
-                   Byggt på kvalitet, säkerhet och förtroende.....
+                    Byggt på kvalitet, säkerhet och förtroende.
                 </h1>
 
             </div>
@@ -65,7 +229,10 @@
         </section>
 
 
-        <!-- VÄRDERINGAR 
+        <!-- =========================================
+             BILDSPEL
+             ========================================= -->
+
         <section class="section section-light">
 
             <div class="container">
@@ -73,79 +240,58 @@
                 <div class="section-heading">
 
                     <p class="eyebrow">
-                        SÅ ARBETAR VI -några refernsbilder
+                        SÅ ARBETAR VI – REFERENSBILDER
                     </p>
 
                     <h2>
-                      Nedan några bilder av genomförda projekt
+                        Nedan några bilder av genomförda projekt
                     </h2>
 
                 </div>
 
-    <h3>Bilder 1</h3>
 
--->
-    
+                <div class="bildspel-container">
 
+                    <!-- Bildvisning -->
 
-
-
-
-<div style="text-align: center;">
-
-   <!-- Bildvisning -->
-    <div>
-        <img id="bildvisare"
-             src="bilder/Spot1.PNG"
-             alt="Spot1"
-             style="width: 100%; max-width: 800px; height: 450px; object-fit: contain;">
-    </div>
+                    <img
+                        id="bildvisare"
+                        src="bilder/Spot1.PNG"
+                        alt="Referensbild från DATA EL INSTALLATION"
+                    >
 
 
-<!-- Klickbara bildnummer -->
-<div class="quality-navigation">
+                    <!-- Klickbara bildnummer -->
 
-    <button class="bildknapp" onclick="visaBild(1)">1</button>
-    <button class="bildknapp" onclick="visaBild(2)">2</button>
-    <button class="bildknapp" onclick="visaBild(3)">3</button>
-    <button class="bildknapp" onclick="visaBild(4)">4</button>
-    <button class="bildknapp" onclick="visaBild(5)">5</button>
-    <button class="bildknapp" onclick="visaBild(6)">6</button>
-    <button class="bildknapp" onclick="visaBild(7)">7</button>
+                    <div class="quality-navigation">
 
-</div>
+                        <button class="bildknapp" onclick="visaBild(1)">1</button>
 
-</div>
+                        <button class="bildknapp" onclick="visaBild(2)">2</button>
 
-<script>
-    function visaBild(nummer) {
+                        <button class="bildknapp" onclick="visaBild(3)">3</button>
 
-        const bilder = [
-            "bilder/Spot1.PNG",
-            "bilder/Spot2.PNG",
-            "bilder/Spot3.PNG",
-            "bilder/Spot4.PNG",
-            "bilder/Spot5.PNG",
-            "bilder/Spot6.PNG",
-            "bilder/Spot7.PNG"
-        ];
+                        <button class="bildknapp" onclick="visaBild(4)">4</button>
 
-        const bild = document.getElementById("bildvisare");
+                        <button class="bildknapp" onclick="visaBild(5)">5</button>
 
-        bild.src = bilder[nummer - 1];
-        bild.alt = "Spot" + nummer;
-    }
-</script>
+                        <button class="bildknapp" onclick="visaBild(6)">6</button>
+
+                        <button class="bildknapp" onclick="visaBild(7)">7</button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
 
 
+        <!-- =========================================
+             CTA
+             ========================================= -->
 
-
-<!--   <div style="height: 20px;"></div>    -->
-
-
-
-
-        <!-- CTA -->
         <section class="cta">
 
             <div class="container">
@@ -166,31 +312,69 @@
     </main>
 
 
+    <!-- =========================================
+         FOOTER
+         ========================================= -->
+
     <footer class="site-footer">
 
         <div class="container footer-container">
 
             <div>
+
                 <div class="footer-logo">
-                     DATA ELINSTALLATION AUTOMATION i SYDOST AB (DELA)
+                    DATA ELINSTALLATION AUTOMATION i SYDOST AB (DELA)
                 </div>
 
                 <p>
-                      Elinstallation • Elservice • Data
+                    Elinstallation • Elservice • Data
                 </p>
+
             </div>
 
             <div>
+
                 <p>
                     © 2026 DATA EL INSTALLATION
                 </p>
+
             </div>
 
         </div>
 
     </footer>
 
+
+    <!-- =========================================
+         JAVASCRIPT – BILDVÄXLING
+         ========================================= -->
+
+    <script>
+
+        function visaBild(nummer) {
+
+            const bilder = [
+
+                "bilder/Spot1.PNG",
+                "bilder/Spot2.PNG",
+                "bilder/Spot3.PNG",
+                "bilder/Spot4.PNG",
+                "bilder/Spot5.PNG",
+                "bilder/Spot6.PNG",
+                "bilder/Spot7.PNG"
+
+            ];
+
+            const bild = document.getElementById("bildvisare");
+
+            bild.src = bilder[nummer - 1];
+
+            bild.alt = "Referensbild " + nummer;
+
+        }
+
+    </script>
+
 </body>
 
 </html>
-```
