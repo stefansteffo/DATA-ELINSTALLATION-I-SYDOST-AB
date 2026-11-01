@@ -784,13 +784,17 @@ p {
 
 .quality-navigation {
     position: absolute;
-    bottom: 10px;
+    bottom: 30px;
     left: 0;
     right: 0;
     display: flex;
     justify-content: center;
-    gap: 10px;
+    gap: 30px;
 }
+
+
+
+
 
 .quality-navigation label {
     background: #e30613;
