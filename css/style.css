@@ -782,14 +782,6 @@ p {
 
 /* BILDKNAPPAR */
 
-/* Klickbara bildnummer */
-.quality-navigation {
-    position: relative;
-    margin-top: 25px;
-    display: flex;
-    justify-content: center;
-    gap: 10px;
-}
 
 /* Röda fyrkantiga knappar med vita siffror */
 .quality-navigation .bildknapp {
@@ -874,21 +866,3 @@ p {
     transform: translateX(-80%);
 }
 
-/* Bildknappar */
-.quality-navigation {
-    position: absolute;
-    bottom: 10px;
-    left: 0;
-    right: 0;
-    display: flex;
-    justify-content: center;
-    gap: 10px;
-}
-
-.quality-navigation label {
-    background: #e30613;
-    color: white;
-    padding: 6px 11px;
-    border-radius: 4px;
-    cursor: pointer;
-}
