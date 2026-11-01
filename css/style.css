@@ -782,7 +782,7 @@ p {
 
 /* BILDKNAPPAR */
 
-/* Klickknappar för bildspel */
+/* Klickbara bildnummer */
 .quality-navigation {
     position: relative;
     margin-top: 25px;
@@ -792,27 +792,26 @@ p {
 }
 
 /* Röda fyrkantiga knappar med vita siffror */
-.quality-navigation label {
-    background: #e30613;
+.quality-navigation .bildknapp {
+    background-color: #e30613;
     color: #ffffff;
     border: none;
     width: 40px;
     height: 40px;
+    padding: 0;
     display: flex;
     align-items: center;
     justify-content: center;
     cursor: pointer;
     font-size: 16px;
     font-weight: bold;
+    border-radius: 0;
 }
 
-
-
-
-.quality-navigation label:hover {
-    background: black;
+/* Mörkare röd när musen ligger över knappen */
+.quality-navigation .bildknapp:hover {
+    background-color: #b8050f;
 }
-
 
 
 
