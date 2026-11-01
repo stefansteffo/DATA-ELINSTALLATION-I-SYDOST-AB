@@ -98,70 +98,56 @@
 
 
 
-<div class="quality-slideshow">
 
-    <input type="radio" name="bild" id="Spot1" checked>
-    <input type="radio" name="bild" id="Spot2">
-    <input type="radio" name="bild" id="Spot3">
-    <input type="radio" name="bild" id="Spot4">
-    <input type="radio" name="bild" id="Spot5">
-    <input type="radio" name="bild" id="Spot6">
-    <input type="radio" name="bild" id="Spot7">
-   
-  
+<div style="text-align: center;">
 
-    <div class="quality-slides">
-
-    
-
-        <div class="quality-slide">
-            <img src="bilder/Spot1.PNG" alt="Spot1">
-        </div>
-
-        <div class="quality-slide">
-            <img src="bilder/Spot2.PNG" alt="Spot2">
-        </div>
-
-        <div class="quality-slide">
-            <img src="bilder/Spot3.PNG" alt="Spot3">
-        </div>
-
-        <div class="quality-slide">
-            <img src="bilder/Spot4.PNG" alt="Spot4">
-        </div>
-
-        <div class="quality-slide">
-            <img src="bilder/Spot5.PNG" alt="Spot5">
-        </div>
-
-           <div class="quality-slide">
-            <img src="bilder/Spot6.PNG" alt="Spot6">
-        </div>
-
-           <div class="quality-slide">
-            <img src="bilder/Spot7.PNG" alt="Spot7">
-        </div>
+    <!-- Bildvisning -->
+    <div>
+        <img id="bildvisare"
+             src="bilder/Spot1.PNG"
+             alt="Spot1"
+             style="width: 100%; max-width: 800px; height: 450px; object-fit: contain;">
     </div>
 
-    <div class="quality-navigation">
-      
-        <label for="Spot1">1</label>
-        <label for="Spot2">2</label>
-        <label for="Spot3">3</label>
-        <label for="Spot4">4</label>
-        <label for="Spot5">5</label>
-        <label for="Spot6">6</label>
-        <label for="Spot7">7</label>
-  
-        
+    <!-- Klickbara bildnummer -->
+    <div style="margin-top: 25px; display: flex; justify-content: center; gap: 25px;">
+
+        <button onclick="visaBild(1)">1</button>
+        <button onclick="visaBild(2)">2</button>
+        <button onclick="visaBild(3)">3</button>
+        <button onclick="visaBild(4)">4</button>
+        <button onclick="visaBild(5)">5</button>
+        <button onclick="visaBild(6)">6</button>
+        <button onclick="visaBild(7)">7</button>
+
     </div>
 
 </div>
 
+<script>
+    function visaBild(nummer) {
+
+        const bilder = [
+            "bilder/Spot1.PNG",
+            "bilder/Spot2.PNG",
+            "bilder/Spot3.PNG",
+            "bilder/Spot4.PNG",
+            "bilder/Spot5.PNG",
+            "bilder/Spot6.PNG",
+            "bilder/Spot7.PNG"
+        ];
+
+        const bild = document.getElementById("bildvisare");
+
+        bild.src = bilder[nummer - 1];
+        bild.alt = "Spot" + nummer;
+    }
+</script>
 
 
 
-<div style="height: 40px;"></div>
+
+<div style="height: 50px;"></div>
 
 
 
