@@ -782,25 +782,32 @@ p {
 
 /* BILDKNAPPAR */
 
+/* Klickknappar för bildspel */
 .quality-navigation {
     position: relative;
-    margin-top: 20px;
+    margin-top: 25px;
     display: flex;
     justify-content: center;
-    gap: 30px;
+    gap: 10px;
 }
 
-
-
-
-
+/* Röda fyrkantiga knappar med vita siffror */
 .quality-navigation label {
     background: #e30613;
-    color: white;
-    padding: 6px 11px;
-    border-radius: 4px;
+    color: #ffffff;
+    border: none;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
 }
+
+
+
 
 .quality-navigation label:hover {
     background: black;
