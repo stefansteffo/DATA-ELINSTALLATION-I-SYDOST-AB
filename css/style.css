@@ -727,142 +727,162 @@ p {
 
 
 
-/* MANUELLT BILDSPEL */
 
-.quality-slideshow {
+
+
+/* =========================================
+   BILDSPEL
+   ========================================= */
+
+.bildspel-container {
     width: 100%;
-    height: 250px;
-    overflow: hidden;
-    position: relative;
+    text-align: center;
+    padding: 20px 0;
 }
 
-.quality-slideshow input {
-    display: none;
-}
+/* Bildvisning */
 
-.quality-slides {
-    display: flex;
-    width: 500%;
-    height: 100%;
-    transition: transform 0.4s ease;
-}
-
-.quality-slide {
-    width: 20%;
-    height: 100%;
-}
-
-.quality-slide img {
+#bildvisare {
+    display: block;
     width: 100%;
-    height: 100%;
+    max-width: 800px;
+    height: 450px;
     object-fit: contain;
+    margin: 0 auto;
 }
 
-/* BYT BILD */
 
-#bild1:checked ~ .quality-slides {
-    transform: translateX(0);
+/* =========================================
+   BILDKNAPPAR
+   ========================================= */
+
+.quality-navigation {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+
+    justify-content: center;
+    align-items: center;
+
+    gap: 10px;
+
+    margin-top: 20px;
+    margin-bottom: 25px;
+
+    width: 100%;
 }
-
-#bild2:checked ~ .quality-slides {
-    transform: translateX(-20%);
-}
-
-#bild3:checked ~ .quality-slides {
-    transform: translateX(-40%);
-}
-
-#bild4:checked ~ .quality-slides {
-    transform: translateX(-60%);
-}
-
-#bild5:checked ~ .quality-slides {
-    transform: translateX(-80%);
-}
-
-/* BILDKNAPPAR */
-
 
 /* Röda fyrkantiga knappar med vita siffror */
+
 .quality-navigation .bildknapp {
     background-color: #e30613;
     color: #ffffff;
+
     border: none;
+    border-radius: 0;
+
     width: 40px;
     height: 40px;
+    min-width: 40px;
+
     padding: 0;
+
     display: flex;
     align-items: center;
     justify-content: center;
-    cursor: pointer;
+
     font-size: 16px;
     font-weight: bold;
-    border-radius: 0;
+
+    cursor: pointer;
+    flex-shrink: 0;
 }
 
-/* Mörkare röd när musen ligger över knappen */
+/* Mörkare röd vid muspekaren */
+
 .quality-navigation .bildknapp:hover {
     background-color: #b8050f;
 }
 
 
+/* =========================================
+   TELEFON – STÅENDE LÄGE
+   ========================================= */
 
+@media screen and (max-width: 600px) {
 
+    #bildvisare {
+        width: 100%;
+        height: 55vh;
+        max-height: 450px;
+        object-fit: contain;
+    }
 
-/* Bildspel */
-.quality-slideshow {
-    width: 100%;
-    height: 250px;
-    position: relative;
-    overflow: hidden;
+    .quality-navigation {
+        position: relative;
+        flex-direction: row;
+        flex-wrap: nowrap;
+
+        justify-content: center;
+        gap: 6px;
+
+        margin-top: 15px;
+        margin-bottom: 20px;
+    }
+
+    .quality-navigation .bildknapp {
+        width: 35px;
+        height: 35px;
+        min-width: 35px;
+
+        font-size: 14px;
+    }
 }
 
-.quality-slideshow input {
-    display: none;
+
+/* =========================================
+   TELEFON – LIGGANDE LÄGE
+   ========================================= */
+
+@media screen and (max-width: 900px) and (orientation: landscape) {
+
+    #bildvisare {
+        width: 100%;
+        height: 55vh;
+        max-height: 350px;
+        object-fit: contain;
+    }
+
+    .quality-navigation {
+        position: relative;
+        bottom: auto;
+
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+
+        justify-content: center;
+        align-items: center;
+
+        gap: 8px;
+
+        margin-top: 12px;
+        margin-bottom: 20px;
+    }
+
+    .quality-navigation .bildknapp {
+        width: 32px;
+        height: 32px;
+        min-width: 32px;
+
+        font-size: 14px;
+    }
 }
 
-/* Bildspårets storlek */
-.quality-slides {
-    display: flex;
-    width: 500%;
-    height: 100%;
-    transition: transform 0.4s ease;
-}
 
-/* En bild åt gången */
-.quality-slide {
-    flex: 0 0 20%;
-    width: 20%;
-    height: 100%;
-    overflow: hidden;
-}
 
-/* Alla bilder får samma storlek */
-.quality-slide img {
-    display: block;
-    width: 100%;
-    height: 250px;
-    object-fit: contain;
-}
 
-/* Välj bild */
-#bild1:checked ~ .quality-slides {
-    transform: translateX(0);
-}
 
-#bild2:checked ~ .quality-slides {
-    transform: translateX(-20%);
-}
 
-#bild3:checked ~ .quality-slides {
-    transform: translateX(-40%);
-}
-
-#bild4:checked ~ .quality-slides {
-    transform: translateX(-60%);
-}
-
-#bild5:checked ~ .quality-slides {
-    transform: translateX(-80%);
-}
 
